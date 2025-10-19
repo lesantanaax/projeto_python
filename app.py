@@ -24,13 +24,22 @@ def finalizar_app():
 def escolher_opcao():
     opcao_escolhida = int(input('Escolha uma opção: '))
     # opcao_escolhida = int(opcao_escolhida)
+    
+    if opcao_escolhida == 1:
+        cadastrar_corrida()     
+    elif opcao_escolhida == 2:
+        listar_corridas()
+    elif opcao_escolhida == 3:
+        reativar_cadastro()
+    else:
+        finalizar_app()
 
 def cadastrar_corrida():
     print('Cadastrar em Corridas')
     nome = input('Digite seu nome: ')
     email = input('Digite seu email: ')
     idade = int(input('Digite sua idade: '))
-    print(f'Nome: {nome}, Email: {email}, Idade: {idade}')
+    print(f'Nome: {nome}\nEmail: {email}\nIdade: {idade}')
     print('Cadastro realizado com sucesso!')   
 
 def listar_corridas():
@@ -43,14 +52,6 @@ def listar_corridas():
 def reativar_cadastro():  
     print('Reativar cadastro')  
 
-if opcao_escolhida == 1:
-    cadastrar_corrida()     
-elif opcao_escolhida == 2:
-    listar_corridas()
-elif opcao_escolhida == 3:
-    reativar_cadastro()
-else:
-    finalizar_app()
 
 def main():
     exibir_nome_do_programa()
