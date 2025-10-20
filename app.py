@@ -26,7 +26,7 @@ def voltar_ao_menu_principal():
     main() 
     
 def opcao_invalida():
-    print('Opção inválida! Tente novamente.\n')
+    print('Opção inválida!.\n')
     voltar_ao_menu_principal()    
 
 def exibir_subtitulo(texto):
